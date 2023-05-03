@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.wrap{
+    height: 500px;
+    width: 355px;
+    padding: 10px;
+    margin: 10%;
+
+}
+input{
+    font-size: 25px;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+.button{
+    width: 80px;
+    height: 70px;
+    position: relative;
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+    cursor: pointer;
+    background: transparent;
+}
+.equal{
+    width: 170px;
+    height: 70px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+}

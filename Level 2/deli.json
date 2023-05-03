@@ -1,0 +1,86 @@
+{
+    "mainMenu": [
+        {
+          "appetizer": {
+            "yogurt": {
+                "nameOfItems": ["yo mama yogurt", "damn good yogo", "Say Whaat"],
+                 "ingredients": ["dry fruit", "chocolate chip", "fresh berries"],
+                 "description": ["all favors are greater when shared with a friend"]
+
+            }}}],
+    
+        "Cold Sandwiches": {
+          "Ham & Cheese": {
+                "nameOfItems": ["James's H&C", "FireSub", "Make Mine Cold"],
+                 "ingredients": ["ham cheese", "lettuce,tomato,onion", "fresh tuna"],
+                 "description": ["all favors are greater when shared with a friend"]
+                },
+        "Chicken Salad": {
+                "nameOfItems": ["James'C & 0", "James FireSub", "Make Mine Cold"],
+                 "ingredients": ["fried chicken", "lettuce,tomato,onion", "fresh bell peppers"],
+                 "description": ["smoked aged cheese"]
+                 },
+        "Cold Turkey": {
+                "nameOfItems": ["James's TurketClub", "Yo Turkey", "Make Mine Cold"],
+                 "ingredients": ["turkey cheese", "lettuce,tomato,onion", "fresh turkey"],
+                 "description": ["delicious and tasty smoked aged cheese"]
+                 } },
+        "Hot Sandwich": {
+          "Turkey on Rye": {
+                "nameOfItems": ["James's H&C", "FireSub", "Make Mine Cold"],
+                 "ingredients": ["ham cheese", "lettuce,tomato,onion", "fresh tuna"],
+                 "description": ["all favors are greater when shared with a friend"]
+                },
+        "Grilled Double Decker": {
+                "nameOfItems": ["James'C & 0", "James FireSub", "Make Mine Cold"],
+                 "ingredients": ["fried chicken", "lettuce,tomato,onion", "fresh bell peppers"],
+                 "description": ["smoked aged cheese"]
+                 },
+        "Cripsy Bacon": {
+                "nameOfItems": ["James's TurketClub", "Yo Turkey", "Make Mine Cold"],
+                 "ingredients": ["turkey cheese", "lettuce,tomato,onion", "fresh turkey"],
+                 "description": ["delicious and tasty smoked aged cheese"]
+                 }
+
+                },
+        "Desserts": {
+          "Chocolate Brownies": {
+                "nameOfItems": ["James's H&C", "FireSub", "Make Mine Cold"],
+                 "ingredients": ["ham cheese", "lettuce,tomato,onion", "fresh tuna"],
+                 "description": ["all favors are greater when shared with a friend"]
+                },
+        "Ice Cream": {
+                "nameOfItems": ["James'C & 0", "James FireSub", "Make Mine Cold"],
+                 "ingredients": ["fried chicken", "lettuce,tomato,onion", "fresh bell peppers"],
+                 "description": ["smoked aged cheese"]
+                 },
+        "Mint Green Tea": {
+                "nameOfItems": ["James's Mint of Tea", "Yo Tea", "Make mine Green"],
+                 "ingredients": ["tea", "kale,beets", "freshly ground and puree"],
+                 "description": ["delicious and filling"]
+                 },
+        "Drinks": {
+            "nameOfItems": [ "coke a cola", "Sprite", "Dr.Pepper"],
+            "ingredients": [ "maple syrup", "Brown Sugar", "bubbles mix" ],
+            "description": ["get your cold and tasty beverages"]
+                
+            } 
+        }}
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

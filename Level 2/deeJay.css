@@ -1,0 +1,46 @@
+    *{
+        box-sizing: border-box
+        ;
+    }
+
+
+.column1 {
+    float: left;
+    width: 205px;
+    height: 205px;
+    border: 1px solid black;
+    background-color: #aaa;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+#column1:hover {
+    background-color: rgb(53, 34, 178);
+    width: 205px;
+}
+
+.column2 {
+    float: left;
+    width: 205px;
+    height: 205px;
+    border: 1px solid black;
+    background-color: #aaa;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+#column2:active {
+    background-color: rgb(202, 27, 53);
+    width: 205px;
+}
+.column3 {
+    float: left;
+    width: 205px;
+    height: 205px;
+    border: 1px solid black;
+    background-color: #aaa;
+    transition-property: background-color;
+    transition-duration: 500ms;
+}
+#column3:active {
+    background-color: rgb(216, 232, 99);
+    width: 205px;
+}

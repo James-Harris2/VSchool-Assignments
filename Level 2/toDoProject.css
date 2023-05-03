@@ -1,0 +1,19 @@
+/* *{
+    padding:0%;
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(
+        
+        rgb(207, 147, 157) 50%,
+        rgb(196, 152, 159) 50%,
+        paleturquoise 50%,
+        paleturquoise 100%
+
+    ); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

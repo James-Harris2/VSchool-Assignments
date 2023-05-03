@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,300;1,200&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-bottom{
+    background-color: rgb(159, 39, 39);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+body{
+    background: #940c89;
+    color:#020e17;
+}

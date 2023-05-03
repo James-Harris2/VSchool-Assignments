@@ -1,0 +1,32 @@
+body {
+    margin:40px;
+}
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+.box .box {
+  background-color: #999;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "box1 box1 box2"
+  "box4 box4 box4"
+  "box5 box5 box5"
+  "box6 box6 box7"
+  "box8 box8 box8"
+  "box9 box9 box9"
+  
+  ;
+
+  background-color: #fff;
+  color: #444;
+ margin: 4em 0;
+}
