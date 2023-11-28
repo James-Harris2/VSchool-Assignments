@@ -24,12 +24,19 @@ const bountyHunters = [
          weapon: "Id say that boy, is about as stupid as a box of rocks!" ,
          _id: uuidv4() 
     }
-
-
 ];
 
+// GET ALL 
+
 bountyRouter.get("/", (req, res) => {
-    res.send()
+    res.send(bountyHunters)
+})
+
+// GET ONE 
+bountyRouter.get("/:bounty", (req, res) => {
+    const bountyHuntersId = req.params.bountyHuntersId
+    const foundBounty = bountyHunters.find(el => el._id === bountyHuntersId)
+    res.send(foundBounty)
 })
 
 bountyRouter.post("/", (req, res) => {
@@ -39,15 +46,20 @@ bountyRouter.post("/", (req, res) => {
     res.send(`Success is staggering`)
 })
  
-.post((req, res) => {
-    res.send()
+// DELETE 
+bountyRouter.delete('/:bounty', (req, res) => {
+    const bountyId = req.params.bounty
+    const bountyIndex = bountyHunters.findIndex(el => el._id === bountyId)
+    bountyHunters.splice(bountyIndex, 1)
+    res.send('successfully delete bounty!')
 })
 
-.get((req, res) => {
-    res.send(`${req.params}`)
-
+// UPDATED ONE
+bountyRouter.put('/:bounty', (req, res) => {
+    const bountyId = req.params.bounty
+    const bountyIndex = bountyHunters.findIndex(el => el._id === bountyId)
+    const updatedBounty = Object.assign(bountyHunters[bountyIndex], req.body)
+    res.send(updatedBounty)
 
 })
-
-
 module.exports = bountyRouter

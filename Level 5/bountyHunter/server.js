@@ -6,7 +6,7 @@ const port = 3000; // I can use any port between 3000 thru 9000
 
 app.use(express.json())
 
-app.use("/bountyHunter",require('./routes/bountyRouter.js'))
+app.use("/",require('./routes/bountyRouter.js'))
 // // GET bounty 
 
 // myRouter.route("bountyHunters")
