@@ -2,7 +2,15 @@
 function About() {
   return (
     <div>
-        <h1>About</h1>
+        <section>
+          <h6>
+            Hi, I'm James E Harris
+            A little fun fact about me, I was born in Las Vegas, NV
+          </h6>
+        </section>
+        <section>
+          
+        </section>
         
     </div>
   )
