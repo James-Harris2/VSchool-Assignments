@@ -1,10 +1,12 @@
 const express = require('express');
 const app = express();
+const morgan = require('morgan')
 
 const port = 3000; // I can use any port between 3000 thru 9000
 // const myRouter = express.Router();
 
-app.use(express.json())
+app.use(express.json()) // Looks for a request.body and turns it into `req.body`
+app.use(morgan('dev')) // Logs request to the console
 
 app.use("/",require('./routes/bountyRouter.js'))
 // // GET bounty 
