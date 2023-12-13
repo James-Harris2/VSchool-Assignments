@@ -1,35 +1,18 @@
 const express = require('express');
 const bountyRouter = express.Router()
 const { v4: uuidv4 } = require('uuid')
-uuidv4();
+const bountyHunters = require('./bountyHunters')
 
-//  FAKE DATA
 
-const bountyHunters = [
-    {   firstname: "Rick ", 
-        lastname: "Flare", 
-        living: true,
-        bountyAmount: 660, 
-        Type: "Sith_Defender",
-        weapon:"I'm Ric Flair! The Stylin, profilin, limo ridin, son of gun!",
-        _id: uuidv4() 
-          
-    },
-
-    {   firstname: "Foghorn",
-        lastname: "Leghorn", 
-         living: false, 
-         bountyAmount: 200,
-         type: "Rebel_Scum", 
-         weapon: "Id say that boy, is about as stupid as a box of rocks!" ,
-         _id: uuidv4() 
-    }
-];
 
 // GET ALL 
 
-bountyRouter.get("/", (req, res) => {
-    res.send(bountyHunters)
+bountyRouter.get("/", async (req, res) => {
+    try {
+        res.status(200).send(bountyHunters)
+    } catch (error){
+        res.status(500).send(error)
+    }
 })
 
 // GET ONE 
@@ -58,6 +41,7 @@ bountyRouter.delete('/:bounty', (req, res) => {
 bountyRouter.put('/:bounty', (req, res) => {
     const bountyId = req.params.bounty
     const bountyIndex = bountyHunters.findIndex(el => el._id === bountyId)
+    console.log(bountyIndex)
     const updatedBounty = Object.assign(bountyHunters[bountyIndex], req.body)
     res.send(updatedBounty)
 
