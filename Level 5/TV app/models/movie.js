@@ -6,13 +6,16 @@ const Schema = mongoose.Schema
 const movieSchema = new Schema({
     title: {
         type: String,
-        required: true
+        required: true 
     },
-    genre: {
+     description: {
         type: String,
         required: true
     },
-    releaseYear: Number
+    datePosted: {
+        type: Date,
+        default: Date.now
+    }
 })
 
 module.exports = mongoose.model('Movie', movieSchema)

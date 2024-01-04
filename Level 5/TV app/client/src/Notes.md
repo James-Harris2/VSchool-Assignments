@@ -8,3 +8,9 @@
     
 
     --[plugin:vite:import-analysis] Failed to resolve import "../src../bountyData../bountyHunters" from "src/App.jsx". Does the file exist?
+
+    ********############ THIS FILE BELONGS TO { TV app } *************############# not bountyHunters
+
+## 12.20.23 F.E 
+ -- will rework the file and build a more condusive Front End
+  -- Port for F.E has not been set-up

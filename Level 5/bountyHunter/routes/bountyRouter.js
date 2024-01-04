@@ -5,7 +5,7 @@ const bountyHunters = require('./bountyHunters')
 
 
 
-// GET ALL 
+// GE T ALL 
 
 bountyRouter.get("/", async (req, res) => {
     try {
