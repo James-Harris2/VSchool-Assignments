@@ -74,7 +74,7 @@ router.post('/', (req, res, next) => {
 
 // DELETE a product
 router.delete('/:id', async (req, res) =>{
-    //kyle was here
+    
     try {
         const deletedProduct = await Product.findByIdAndDelete(req.params.id);
         if (!deletedProduct) {
