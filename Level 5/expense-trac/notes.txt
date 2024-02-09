@@ -1,0 +1,7 @@
+Create and Read a balance (post, get)
+
+post route for your expense that passes a balanceId
+
+touch up the rest of the routes for the (req, res, next)
+
+no res.json!
