@@ -32,7 +32,7 @@ try {
 })
 
 // UPDATE
-userRouter.get('/getUser/:id', async (req, res, next) => {
+userRouter.get('api/user/createUser:id', async (req, res, next) => {
  try {
     const user = await User.findByIdAndUpdate(req.params.id, req.body, {
         next: true,
@@ -47,7 +47,7 @@ userRouter.get('/getUser/:id', async (req, res, next) => {
 userRouter.put('/updateUser/:id', async (req, res, next) => {
 try {
     const user = await User.findByIdAndUpdate(req.params.id, req.body, {
-        next: true,
+        new: true,
     });
     return res.status(201).send(user);
 } catch (err) {
@@ -59,7 +59,7 @@ try {
 
 userRouter.delete('/deleteUser/:id', async (req, res,) => {
     try {
-        const userId = await User.findByIdAndDelete({});
+        const userId = await User.findByIdAndDelete(req.params.id);
         return res.status(201).send(userId) 
     }catch (err){
         res.status(500).send(err)

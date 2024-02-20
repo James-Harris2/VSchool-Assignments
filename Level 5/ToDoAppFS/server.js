@@ -10,18 +10,14 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 // TestingDB ||  yoQwgvVYoaRgTjTf
+// woyYkhPunlMT6CAx
 
 mongoose.set('strictQuery', true)
-mongoose.connect('mongodb+srv://TestingDB:yoQwgvVYoaRgTjTf@cluster0.ejovk8j.mongodb.net/', (err) =>{
+mongoose.connect('mongodb+srv://jameseharrisii:woyYkhPunlMT6CAx@cluster0.jy0ph3v.mongodb.net/', (err) =>{
     console.log("Connected to DB", err)
 })
 
 app.use('/api/user', require('./routes/UserRoute.js'))
-app.use('/api/createUser', require('./routes/UserRoute.js'))
-app.use('/api/updateUser', require('./routes/UserRoute.js'))
-app.use('/api/deleteUser', require ('./routes/UserRoute.js'))
-app.use('/api/user/createUser', require ('./routes/UserRoute.js'))
-
 
 
 app.use((err, req, res, next) => {
