@@ -1,12 +1,12 @@
 // import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar.jsx';
 import {Routes, Route, Navigate} from 'react-router-dom'
-import Auth from './components/Auth';
-import Profile from './components/Profile';
+import Auth from './components/Auth.jsx';
+import Profile from './components/Profile.jsx';
 import { useContext, useEffect } from 'react';
-import { UserContext } from './context/UserProvider';
-import ProtectedRoute from './components/ProtectedRoute';
-import PublicPostList from './components/PublicPostList';
+import { UserContext } from './context/UserProvider.jsx';
+import ProtectedRoute from './components/ProtectedRoute.jsx';
+import PublicPostList from './components/PublicPostList.jsx';
 
 
 

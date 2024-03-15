@@ -17,11 +17,13 @@ app.use(morgan('dev'))
 
 // MongoDB Connect  
 
+mongoose.connect(
+    process.env.MONGO_URL,
+    () => console.log('Connected to the DB')
+  )
 
-mongoose.set('strictQuery', true)
-mongoose.connect('mongodb+srv://jameseharrisii:woyYkhPunlMT6CAx@cluster0.jy0ph3v.mongodb.net/LEVEL6?retryWrites=true&w=majority', (err) =>{
-    console.log("Connected to DB", err)
-})
+
+
 
 app.use('/auth', require('./routes/authRouter.js'))
 app.use('/api', expressjwt({ secret: process.env.SECRET, algorithms:['HS256'] }))
@@ -31,6 +33,9 @@ app.use('/api/rtv',require('./routes/rtvRouter.js'))
 
 app.use((err, req, res, next) => {
     console.log(err)
+    if(err.name === "Unauthorized Error"){
+        res.status(err.status)
+    }
     return res.send({errMsg: err.message})
 })
 
