@@ -1,0 +1,31 @@
+import { createContext, useState } from "react"
+import axiox from 'axios';
+
+
+const BalanceContext = createContext()
+
+const userAxios = axios.create()
+
+
+userAxios.interceptors.request.use(config => {
+    const token = localStorage.getItem('token')
+    config.header.Authorization = `Bearer${token}`
+    return config
+})
+
+function UserBalance(props) {
+
+const initState = {
+    user: JSON.parse(localStorage.getItem('user')) || {},
+    token: localStorage.getItem('token') || "",
+    posts: [],
+    errMsg: ''
+}
+
+return (
+    <BalanceContext.Provider value={{ balance, updateBalance }}>
+    </BalanceContext.Provider>
+)
+
+}
+
